@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Assistant Regular */
+@font-face {
+    font-family: 'Assistant';
+    src: url('./fonts/Assistant-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Assistant Bold */
+@font-face {
+    font-family: 'Assistant';
+    src: url('./fonts/Assistant-VariableFont_wght.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #2d2d2d;
+    font-family: 'Assistant', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-image: url('./img/move-3973175.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header, footer, a {
+    padding: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 700;
+    font-size: clamp(16px, 4vw, 28px);
+    color: #2d2d2d;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    align-self: center;
+    max-width: 230px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.93);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+/* Add margin to all children of main except the last one */
+main > *:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: clamp(16px, 4vw, 18px);
+    color: #2d2d2d;
+}
+
+main p {
+    font-size: 16px; /* Ensure p elements are properly sized */
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 8px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none; /* Ensure the link looks like a button */
+}
